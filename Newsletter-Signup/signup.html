@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewsLetter-SignUp</title>
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- own css -->
+    <link rel="stylesheet" href="css/sign-in.css" />
+  </head>
+  <body class="text-center">
+    <main class="form-signin w-100 m-auto">
+      <form action="/" method="post">
+        <img
+          class="logo mb-4"
+          src="images/logo.jpg"
+          alt=""
+          width="72"
+          height="57"
+        />
+        <h1 class="h4 mb-3 fw-normal">Signup to My Newsletter!</h1>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="top form-control"
+            id="floatingFirstName"
+            name="fName"
+            placeholder="First Name"
+          />
+          <label for="floatingFirstName">First Name</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="middle form-control"
+            id="floatingLastName"
+            name="lName"
+            placeholder="Last Name"
+          />
+          <label for="floatingLastName">Last Name</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="email"
+            class="bottom form-control"
+            id="floatingInput"
+            name="email"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+
+        <button class="w-100 btn btn-lg btn-primary" type="submit">
+          Sign Up
+        </button>
+        <p class="mt-5 mb-3 text-muted">&copy; jyotiranjan 2023</p>
+      </form>
+    </main>
+  </body>
+</html>
