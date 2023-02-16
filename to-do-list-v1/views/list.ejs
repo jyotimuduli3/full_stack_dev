@@ -1,0 +1,38 @@
+<!-- adding layout -->
+
+<%- include("header"); -%>
+
+
+    <!-- <% if(wday==="Sunday"||wday==="Saturday"){ %>
+    <h1 style="color: purple"><%= wday %> ToDoList</h1>
+    <% }else{ %>
+    <h1 style="color: blue"><%= wday %> ToDoList</h1>
+    <% } %> -->
+
+
+    <div class="box" id="heading">
+        <h1><%= wday %></h1>
+    </div>
+    
+    <div class="box">
+        
+            <!-- now we need to pass data from app.js to list.ejs  -->
+            <%for(var i=0;i<newItems.length;i++){%>
+                <div class="item">
+                    <input type="checkbox">
+                    <p><%= newItems[i] %></p>
+                </div>
+            <%}%>
+       
+        <!-- we have passed the data from web page to app.js  by using this form post method-->
+        <form class="item" action="/" method="post">
+            <input type="text" name="newItem" placeholder="New Item" autocomplete="off"/>
+            <button type="submit" name="list" value=<%= wday %>><strong>+</strong></button>
+        </form>
+    </div>
+
+
+    <%- include("footer"); -%>
+
+
+    
